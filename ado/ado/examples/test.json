@@ -1,0 +1,92 @@
+{
+  "id": "https://pd.exemplar.client.dev.authnet.webshield.io/s/exemplar/ingest-request/1588614429590",
+  "description": "Submit New Association Claim",
+  "issuer_person_recordID": "00u1hzw7f2X6fXBlj357",
+  "issuer_oidc_idtoken": {
+    "oidc_provider": "okta",
+    "oidc_idtoken": "<your_oidc_idtoken>"
+  },
+  "ado_data": {
+    "subjects": [
+      {
+        "id": "https://pd.exemplar.client.dev.authnet.webshield.io/s/exemplar/p/ex_rid_timothy_f_atkins",
+        "type": "Person",
+        "recordID": "ex_rid_timothy_f_atkins",
+        "sourceID": "exemplar",
+        "names": [
+          {
+            "type": "Name",
+            "fullName": "Timothy F Atkins"
+          }
+        ],
+        "identifiers": {
+          "email": [
+            {
+              "type": "identifier/Email",
+              "value": "timothy.atkins@pd.example.com"
+            }
+          ]
+        }
+      }
+    ],
+    "organizations": [
+      {
+        "id": "https://pd.exemplar.client.dev.authnet.webshield.io/s/exemplar/o/ex_rid_webshield_inc",
+        "type": "Organization",
+        "name": "WebShield Inc.",
+        "record_id": "ex_rid_webshield_inc"
+      }
+    ],
+    "credentials": [
+      {
+        "id": "https://pd.exemplar.client.dev.authnet.webshield.io/credentials/1588614429590",
+        "type": [
+          "Credential"
+        ],
+        "basisOfAccountability": [
+          {
+            "type": "BasisOfAccountability",
+            "startDate": "2020-05-04",
+            "endDate": "",
+            "accountability_policy": [
+              {
+                "type": "AccountabilityPolicy",
+                "policy": "accountability/attest_under_penalty_of_purgery",
+                "value": "cv/agreed"
+              }
+            ]
+          }
+        ],
+        "credentialSubject": [
+          {
+            "id": "https://pd.exemplar.client.dev.authnet.webshield.io/s/exemplar/p/ex_rid_timothy_f_atkins",
+            "association_claim": [
+              {
+                "type": "AssociationClaim",
+                "claim": "association/IsEmployeeOf",
+                "org_recordID": "ex_rid_webshield_inc",
+                "recordID": "ex_rid_association.ex_rid_timothy_f_atkins.isemployeeof.ex_rid_webshield_inc",
+                "text": "Exemplar Association Claim",
+                "startDate": "2020-05-04",
+                "endDate": "",
+                "duration": "1",
+                "interaction": "Daily"
+              },
+              {
+                "type": "AssociationClaim",
+                "claim": "association/IsInVitalRecordsDepartment",
+                "org_recordID": "ex_rid_webshield_inc",
+                "recordID": "ex_rid_association.ex_rid_timothy_f_atkins.isinvitalrecordsdepartment.ex_rid_webshield_inc",
+                "text": "Exemplar Association Claim",
+                "startDate": "2020-05-04",
+                "endDate": "",
+                "duration": "1",
+                "interaction": "Daily"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
